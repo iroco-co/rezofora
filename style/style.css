@@ -1,0 +1,35 @@
+body {
+    color: #333;
+    background-image: url("../img/rod-long-zacVDX85Lfo-unsplash_1920px.jpg") ;
+            /*image-set(*/
+            /*url("../img/rod-long-zacVDX85Lfo-unsplash_480px.jpg") 1x,*/
+            /*url("../img/rod-long-zacVDX85Lfo-unsplash_640px.jpg") 2x,*/
+            /*url("../img/rod-long-zacVDX85Lfo-unsplash_800px.jpg") 3x,*/
+            /*url("../img/rod-long-zacVDX85Lfo-unsplash_1920px.jpg") 4x,*/
+            /*#EEEEEE);*/
+    background-size: cover;
+    font: 100% Arial, sans-serif;
+    padding: 5rem;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 5rem;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: center;
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 5rem;
+    padding-bottom: 2.5rem;
+    font-size: smaller;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: right;
+}
+a {
+    color: #0033cc;
+}
