@@ -40,6 +40,7 @@ body {
     margin: 0;
 }
 
+
 .header-skip-content {
     position: absolute;
     top: .125em;
@@ -70,24 +71,29 @@ body {
 }
 
 .menu > .brand-logo {
-    width: 14rem;
+    width: 16rem;
     margin-bottom: 2rem;
     max-height: 6em;
     aspect-ratio: 1;
 }
 
 .menu > .items {
-    padding: 0 6rem;
+    margin-top: 1.5rem;
+    padding: 0 3rem;
     display: flex;
     flex-grow: 1;
     align-items: center;
 }
 
 .menu > .items > a {
-    flex-wrap: wrap;
     flex-grow: 1;
     text-align: center;
-    padding: 1em;
+    padding: 1em 2em;
+    color: #0e635d;
+    font-weight: bold;
+    font-size: 1.125em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -104,18 +110,21 @@ body {
 .hero-content > h1 {
     color: #E6AC2A;
     margin-top: 0;
+
+    font-size: 2.5rem;
 }
 
 .hero-content > p {
     color: white;
-    max-width: 20rem;
+    max-width: 26rem;
+    font-size: larger;
 }
 
 
 .hero > div {
     border-left: #E6AC2A solid 6px;
     padding-left: 1rem;
-    width: 28rem;
+    width: 36rem;
 }
 
 .hero > img {
