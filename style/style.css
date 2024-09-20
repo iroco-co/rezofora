@@ -1,0 +1,123 @@
+/* Inter font */
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+/* Les noms des classes ne sont pas définitifs */
+.vert-fonce {
+    color: #0e635d;
+}
+
+.vert-clair {
+    color: #B0D2BC;
+}
+
+.orange-fonce {
+    color: #D47430;
+}
+
+.orange-pastel {
+    color: #FDF6ED;
+}
+
+.orange-clair {
+
+    color: #E6AC2A;
+}
+
+.rose {
+
+    color: #E7BAC3;
+}
+
+body {
+    margin: 0;
+}
+
+.header-skip-content {
+    position: absolute;
+    top: .125em;
+    left: .125em;
+    z-index: 1001;
+    text-align: center;
+    background-color: #0e635d; /* vert foncé */
+    color: #B0D2BC; /* vert clair */
+}
+
+.header-skip-content a:focus {
+    display: inline-block;
+    cursor: pointer;
+    padding: .5em;
+    color: #B0D2BC; /* vert clair */
+}
+
+.header-skip-content a:not(:focus) {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.menu > .brand-logo {
+    width: 14rem;
+    margin-bottom: 2rem;
+    max-height: 6em;
+    aspect-ratio: 1;
+}
+
+.menu > .items {
+    padding: 0 6rem;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.menu > .items > a {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.hero {
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    background-color: #0e635d;;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-content > h1 {
+    color: #E6AC2A;
+    margin-top: 0;
+}
+
+.hero-content > p {
+    color: white;
+    max-width: 20rem;
+}
+
+
+.hero > div {
+    border-left: #E6AC2A solid 6px;
+    padding-left: 1rem;
+    width: 28rem;
+}
+
+.hero > img {
+    width: 12rem;
+}
