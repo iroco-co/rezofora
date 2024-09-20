@@ -100,7 +100,7 @@ body {
 .hero {
     padding: 2rem 0;
     padding-bottom: 4rem;
-    background-color: #0e635d;;
+    background-color: #0e635d;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -129,4 +129,32 @@ body {
 
 .hero > img {
     width: 12rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cards > .card {
+    margin: -3rem 1.5rem;
+    padding: 2rem;
+    width: 12rem;
+    background-color: #FDF6ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    padding: .4rem 1.4rem;
+    width: fit-content;
+    background-color: #0e635d;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
 }
