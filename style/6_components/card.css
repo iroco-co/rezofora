@@ -1,0 +1,39 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards > .card {
+    margin: -2rem 1.5rem 3rem;
+    padding: 2rem;
+    width: auto;
+    background-color: #FDF6ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.card > button{
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .cards > .card {
+        width: 16rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cards > .card {
+        width: 13rem;
+    }
+}
+
+/*10:1  ✖  Descendant classes should always be prefixed. `.cards > .card`                selector-disallowed-list*/
+/*13:5  ✖  Only graphical elements should be given dimensions. `.cards > .card & width`  rule-selector-property-disallowed-list*/

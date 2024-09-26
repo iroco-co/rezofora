@@ -1,0 +1,27 @@
+.header-skip-to-content {
+    position: absolute;
+    top: .125em;
+    left: .125em;
+    z-index: 1001;
+    text-align: center;
+    background-color: var(--DarkGreen);
+    color: var(--White);
+}
+
+.header-skip-to-content a:focus {
+    display: inline-block;
+    cursor: pointer;
+    padding: .5em;
+    color: var(--White);
+}
+
+.header-skip-to-content a:not(:focus) {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+}
+
+/*2:15  ⚠  This positioning value is tricky. Caution is required. `position & absolute`                declaration-property-value-disallowed-list*/
+/*5:5   ✖  Limit z-index levels to lower values                                                        plugin/z-index-value-constraint*/
+/*20:15  ⚠  This positioning value is tricky. Caution is required. `position & absolute`                declaration-property-value-disallowed-list*/
+/*21:5   ✖  This property should be used with another. `border-radius,aspect-ratio & overflow: hidden`  plugin/declaration-block-conjoined-properties*/

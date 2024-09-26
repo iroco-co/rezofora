@@ -1,0 +1,51 @@
+/*
+--------------------------------------------
+2. Theming
+--------------------------------------------
+*/
+/*
+2.0 Master configuration
+*/
+
+/* Library of values and design tokens
+ * To ensure minimal weight in the browser,
+ * only the values used are declared.
+ * Refer to the bottom of this file for the full list. */
+/* Palette colors */
+
+html {
+    /* Palette colors */
+    --rgbDarkGreen: 0, 106, 104;
+    /*--rgbDarkGreen: 1, 104, 103;*/
+    --rgbGreen: 177, 215, 191;
+    --rgbDarkOrange: 212, 116, 48;
+    --rgbOrange: 255, 180, 2;
+    --rgbLightOrange: 255, 246, 234;
+    /*--rgbLightOrange: 249, 239, 228;*/
+    /*--rgbLightOrange: 253, 246, 237;*/
+    --rgbPink: 255, 190, 195;
+    /*--rgbPink: 231, 186, 195;*/
+    --rgbWhite: 255, 255, 255;
+    --rgbBlack: 0, 0, 0;
+
+    --DarkGreen: rgb(var(--rgbDarkGreen));
+    --Green: rgb(var(--rgbGreen));
+    --DarkOrange: rgb(var(--rgbDarkOrange));
+    --Orange: rgb(var(--rgbOrange));
+    --LightOrange: rgb(var(--rgbLightOrange));
+    --Pink: rgb(var(--rgbPink));
+    --White: rgb(var(--rgbWhite));
+    --Black: rgb(var(--rgbBlack));
+
+    /* Logical colors */
+    --Color: var(--Black);
+    --ColorSupport: var(--Pink);
+    --ColorAccent: var(--Orange);
+    --ColorBg: var(--White);
+
+    --rgbColor: var(--rgbBlack);
+    --rgbColorSupport: var(--rgbPink);
+    --rgbColorAccent: var(--rgbOrange);
+    --rgbColorBg: var(--rgbWhite);
+
+}

@@ -1,0 +1,30 @@
+/* 2.2 Typesetting */
+
+/* Typography based on system fonts ----------------------- */
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+
+/* Adaptation of the typography ----------------------- */
+
+/* Typographic scale ----------------------- */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    --FontWeight: 800;
+}
+
+strong {
+    --FontWeight: 600;
+}
+
+small {
+    font-size: .75em;
+}

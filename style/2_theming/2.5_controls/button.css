@@ -1,0 +1,14 @@
+button, .button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button{
+    padding: .4rem 1.4rem;
+    width: fit-content;
+    background-color: var(--DarkGreen);
+    border: none ;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}

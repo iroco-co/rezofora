@@ -1,0 +1,30 @@
+/* 2.1 Initial system rules */
+
+/* Apply basic typographic styles */
+html {
+    color: var(--Color, initial);
+}
+
+/* Basic typographic sizes, colors & spacing */
+
+select, input, textarea, button, legend, figcaption,
+p, ul, ol, a, q, cite, span, small, th, td,
+h1, h2, h3, h4, h5, h6 {
+    color: var(--Color, inherit);
+    font-weight: var(--FontWeight, inherit);
+}
+
+strong, b {
+    font-weight: var(--FontWeight, 600);
+}
+
+
+/* Inheritance in place for child “inline” elements */
+legend *, figcaption *, button *, p *, ul *, ol *, a *, q *, cite *, span *, small *, th *, td *,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+}
+
+/* Allow icons to receive context color */
+i {
+    fill: currentColor;
+}

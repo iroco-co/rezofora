@@ -2,13 +2,24 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="description" content="Rezofora, conseil et accompagnement en numérique responsable.">
-	<link rel="stylesheet" href="style/style.css" />
 	<link rel="preconnect" href="/">
 	<link rel="stylesheet" href="fonts/inter/inter.css">
+	<link rel="stylesheet" href="style/1_base.css" />
+	<link rel="stylesheet" href="style/2_theming/2.0_theming-config.css" />
+	<link rel="stylesheet" href="style/2_theming/2.1_theming-initial-rules.css" />
+	<link rel="stylesheet" href="style/2_theming/2.2_theming-typesetting.css" />
+	<link rel="stylesheet" href="style/2_theming/2.3_theming-rythm.css" />
+	<link rel="stylesheet" href="style/2_theming/2.5_controls/button.css" />
+	<link rel="stylesheet" href="style/3_features.css" />
+	<link rel="stylesheet" href="style/4_regions.css" />
+	<link rel="stylesheet" href="style/6_components/card.css" />
+	<link rel="stylesheet" href="style/6_components/header-skip-to-content.css" />
+	<link rel="stylesheet" href="style/6_components/hero.css" />
+	<link rel="stylesheet" href="style/6_components/menu.css" />
 	<title>Rezofora</title>
 	<script type="application/ld+json">{
 		"@context": "https://schema.org",
@@ -68,7 +79,7 @@
 	class="header"
 >
 	<nav
-		class="header-skip-content"
+		class="header-skip-to-content"
 		role="navigation" aria-label="Accès rapide" lang="fr"
 	>
 		<a href="#main">Contenu</a>
@@ -101,7 +112,7 @@
 			</p>
 		</div>
 
-		<img src="img/Icone-Rezofora-R.svg" alt />
+		<img class="illustration" src="img/Icone-Rezofora-R.svg" alt />
 	</section>
 	<section class="cards">
 		<div class="card">
@@ -132,39 +143,27 @@
 			<button>Je découvre</button>
 		</div>
 	</section>
-	<h2>Foo</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros lacus, commodo eu tristique non, ultricies eu
-		tellus. Nulla facilisi. Integer a tincidunt purus. Proin vulputate tristique magna. Aliquam id eros id ante
-		malesuada interdum. Phasellus tristique ac leo at fringilla. Cras a viverra nibh, vitae rutrum ante. Sed pharetra
-		nibh ac velit dignissim ornare sed accumsan lacus. Vestibulum tincidunt purus sapien, ac dapibus sem semper a.
-		Nullam venenatis vestibulum risus id molestie. Aliquam facilisis nunc at nunc aliquam hendrerit. Etiam sodales
-		sodales lectus, ut suscipit lacus vehicula nec. Proin vel magna sed orci condimentum ornare in a odio. In varius
-		eu
-		augue eget tincidunt. Ut quis porttitor nulla. Nulla leo nunc, efficitur non ipsum vel, tincidunt auctor lectus.
-	</p>
-	<h2>Bar</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros lacus, commodo eu tristique non, ultricies eu
-		tellus. Nulla facilisi. Integer a tincidunt purus. Proin vulputate tristique magna. Aliquam id eros id ante
-		malesuada interdum. Phasellus tristique ac leo at fringilla. Cras a viverra nibh, vitae rutrum ante. Sed pharetra
-		nibh ac velit dignissim ornare sed accumsan lacus. Vestibulum tincidunt purus sapien, ac dapibus sem semper a.
-		Nullam venenatis vestibulum risus id molestie. Aliquam facilisis nunc at nunc aliquam hendrerit. Etiam sodales
-		sodales lectus, ut suscipit lacus vehicula nec. Proin vel magna sed orci condimentum ornare in a odio. In varius
-		eu
-		augue eget tincidunt. Ut quis porttitor nulla. Nulla leo nunc, efficitur non ipsum vel, tincidunt auctor lectus.
-	</p>
-	<h2>Baz</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros lacus, commodo eu tristique non, ultricies eu
-		tellus. Nulla facilisi. Integer a tincidunt purus. Proin vulputate tristique magna. Aliquam id eros id ante
-		malesuada interdum. Phasellus tristique ac leo at fringilla. Cras a viverra nibh, vitae rutrum ante. Sed pharetra
-		nibh ac velit dignissim ornare sed accumsan lacus. Vestibulum tincidunt purus sapien, ac dapibus sem semper a.
-		Nullam venenatis vestibulum risus id molestie. Aliquam facilisis nunc at nunc aliquam hendrerit. Etiam sodales
-		sodales lectus, ut suscipit lacus vehicula nec. Proin vel magna sed orci condimentum ornare in a odio. In varius
-		eu
-		augue eget tincidunt. Ut quis porttitor nulla. Nulla leo nunc, efficitur non ipsum vel, tincidunt auctor lectus.
-	</p>
+	<section style="    display: flex;    background-color: var(--Pink);    justify-content: space-evenly;">
+		<article>
+			<header style="    border-left: var(--White) solid 6px;
+    padding-left: 1rem;">
+				<h2>Comment l'intégrer dans votre entreprise ?</h2>
+			</header>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros lacus, commodo eu tristique non, ultricies eu
+				tellus. Nulla facilisi. Integer a tincidunt purus. Proin vulputate tristique magna. Aliquam id eros id ante
+				malesuada interdum. Phasellus tristique ac leo at fringilla. Cras a viverra nibh, vitae rutrum ante. Sed
+				pharetra
+				nibh ac velit dignissim ornare sed accumsan lacus. Vestibulum tincidunt purus sapien, ac dapibus sem semper a.
+				Nullam venenatis vestibulum risus id molestie. Aliquam facilisis nunc at nunc aliquam hendrerit. Etiam sodales
+				sodales lectus, ut suscipit lacus vehicula nec. Proin vel magna sed orci condimentum ornare in a odio. In varius
+				eu
+				augue eget tincidunt. Ut quis porttitor nulla. Nulla leo nunc, efficitur non ipsum vel, tincidunt auctor lectus.
+			</p>
+		</article>
+	</section>
+
+
 </main>
 <footer>
 </footer>
