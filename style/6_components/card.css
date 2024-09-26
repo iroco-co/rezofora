@@ -18,6 +18,10 @@
     font-size: small;
 }
 
+.cards > .card:last-child {
+    margin-bottom: 0;
+}
+
 .card > button{
     margin-top: 2rem;
 }
@@ -30,9 +34,11 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .cards > .card {
+    .cards > .card ,.cards > .card:last-child{
         width: 13rem;
+        margin-bottom: 0;
     }
+
 }
 
 /*10:1  ✖  Descendant classes should always be prefixed. `.cards > .card`                selector-disallowed-list*/
