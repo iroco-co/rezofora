@@ -5,7 +5,7 @@
 */
 /* Ex. https://github.com/efficientcss/ecss.info/tree/main/assets/css/4.regions */
 
-body{
+body {
     padding: 0;
 }
 
@@ -21,6 +21,51 @@ main {
 }
 
 
+footer {
+    padding: 1rem;
+    margin: 0;
+    background-color: var(--DarkGreen);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+footer ul{
+    list-style-type: none;
+}
+footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem
+}
+footer  header {
+    margin-bottom: .5rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+footer a{
+    color: var(--White);
+
+}
+.copyright{
+    font-size: small;
+    color: var(--White);
+}
+footer header > h2{
+    color: var(--White);
+}
+
+
 section {
     padding: 1rem .5rem;
     margin: 0;
@@ -28,7 +73,7 @@ section {
 
 @media only screen and (min-width: 576px) {
 
-    body{
+    body {
         padding: 0;
     }
 
@@ -43,6 +88,17 @@ section {
         margin: 0;
     }
 
+
+    section {
+        padding: 1rem .5rem;
+        margin: 0;
+    }
+
+
+    footer > div {
+        display: flex;
+        flex-direction: row;
+    }
 
     section {
         padding: 1rem .5rem;
