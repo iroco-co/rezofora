@@ -12,6 +12,7 @@ nav.menu
 .menu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 0;
     padding: 0 .5rem;
     margin-bottom: .5rem;
@@ -24,7 +25,6 @@ nav.menu
     width: 16rem;
     margin-bottom: 1rem;
     max-height: 6em;
-    aspect-ratio: 1;
 }
 
 .menu > .items {
@@ -49,13 +49,15 @@ nav.menu
 
 @media only screen and (min-width: 576px) {
 
-    .menu {
+    .menu
+    {
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
     .menu > .brand-logo {
         width: 14rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
         max-height: 7rem;
     }
 
