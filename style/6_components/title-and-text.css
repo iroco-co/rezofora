@@ -1,0 +1,74 @@
+/* Usage
+
+section
+    header
+        ...
+    p
+
+ */
+.title-and-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.title-and-text > header {
+    border-left-width: 6px;
+    border-left-style: solid;
+    padding: .5rem 0;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-and-text > p {
+    margin: 0 1.5rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.title-and-text.as-primary {
+    background-color: var(--DarkGreen)
+}
+
+.title-and-text.as-primary > header {
+    border-color: var(--Orange);
+}
+
+.title-and-text.as-primary > header > * {
+    color: var(--Orange);
+}
+
+.title-and-text.as-primary > p {
+    color: var(--White);
+}
+
+.title-and-text.as-secondary {
+    background-color: var(--White)
+}
+
+.title-and-text.as-secondary > header {
+    border-color: var(--Black);
+    color: var(--Black);
+}
+
+.title-and-text.as-secondary > p {
+    color: var(--Black);
+}
+
+.title-and-text.as-tertiary {
+    background-color: var(--Pink)
+}
+
+.title-and-text.as-tertiary > header {
+    border-color: var(--White);
+}
+
+.title-and-text.as-tertiary > header > * {
+
+    color: var(--DeepBlack);
+}
+
+.title-and-text.as-tertiary > p {
+    color: var(--Black);
+}

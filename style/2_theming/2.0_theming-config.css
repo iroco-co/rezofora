@@ -26,7 +26,8 @@ html {
     --rgbPink: 255, 190, 195;
     /*--rgbPink: 231, 186, 195;*/
     --rgbWhite: 255, 255, 255;
-    --rgbBlack: 0, 0, 0;
+    --rgbBlack: 30, 30, 30;
+    --rgbDeepBlack: 0, 0, 0;
 
     --DarkGreen: rgb(var(--rgbDarkGreen));
     --Green: rgb(var(--rgbGreen));
@@ -36,6 +37,7 @@ html {
     --Pink: rgb(var(--rgbPink));
     --White: rgb(var(--rgbWhite));
     --Black: rgb(var(--rgbBlack));
+    --DeepBlack: rgb(var(--rgbDeepBlack));
 
     /* Logical colors */
     --Color: var(--Black);
