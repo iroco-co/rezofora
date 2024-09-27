@@ -8,41 +8,78 @@ nav.menu
         a
         a
  */
+
 .menu {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     padding: 0 .5rem;
     margin-bottom: .5rem;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .menu > .brand-logo {
     width: 16rem;
-    margin-bottom: 0;
-    height: 6em;
+    margin-bottom: 1rem;
+    max-height: 6em;
     aspect-ratio: 1;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 
 .menu > .items {
-    margin-top: 3rem;
+    margin-top: .5rem;
     display: flex;
-    flex-grow: 1;
+    gap: .125rem;
     align-items: baseline;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .menu > .items > a {
     margin: .25rem;
-    flex-grow: 1;
     text-align: center;
     color: var(--DarkGreen);
     font-weight: bold;
     font-size: 1.125rem;
     text-decoration: none;
     text-transform: uppercase;
+    padding: .25rem;
 }
 
+@media only screen and (min-width: 576px) {
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0 .5rem;
+        margin-bottom: .5rem;
+        justify-content: space-evenly;
+    }
+
+    .menu > .brand-logo {
+        width: 14rem;
+        margin-bottom: .5rem;
+        max-height: 7rem;
+        aspect-ratio: 1;
+        /*flex-grow: 1;*/
+    }
+    .menu > .items {
+        margin-top: 3rem;
+        display: flex;
+        gap: .25rem;
+        align-items: baseline;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .menu > .items > a {
+                padding: .5rem;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .menu {
@@ -53,10 +90,10 @@ nav.menu
         margin-bottom: 1rem;
         height: 5em;
         aspect-ratio: 1;
-        flex-grow: unset;
     }
 
     .menu > .items {
+        gap: 1rem;
         margin-top: 2rem;
         align-items: center;
         flex-direction: row;
