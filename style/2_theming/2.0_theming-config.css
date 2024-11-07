@@ -12,25 +12,24 @@
  * only the values used are declared.
  * Refer to the bottom of this file for the full list. */
 /* Palette colors */
-
 html {
     /* Palette colors */
-    --rgbDarkGreen: 0, 106, 104;
+    --rgbDarkGreen: 1, 104, 103;
     /*--rgbDarkGreen: 1, 104, 103;*/
-    --rgbGreen: 177, 215, 191;
+    --rgbLightGreen: 177, 215, 191;
     --rgbDarkOrange: 212, 116, 48;
     --rgbOrange: 255, 180, 2;
-    --rgbLightOrange: 255, 246, 234;
+    --rgbLightOrange: 255, 247, 236;
     /*--rgbLightOrange: 249, 239, 228;*/
     /*--rgbLightOrange: 253, 246, 237;*/
-    --rgbPink: 255, 190, 195;
+    --rgbPink: 255, 193, 196;
     /*--rgbPink: 231, 186, 195;*/
     --rgbWhite: 255, 255, 255;
-    --rgbBlack: 30, 30, 30;
+    --rgbBlack: 34, 34, 33;
     --rgbDeepBlack: 0, 0, 0;
 
     --DarkGreen: rgb(var(--rgbDarkGreen));
-    --Green: rgb(var(--rgbGreen));
+    --LightGreen: rgb(var(--rgbLightGreen));
     --DarkOrange: rgb(var(--rgbDarkOrange));
     --Orange: rgb(var(--rgbOrange));
     --LightOrange: rgb(var(--rgbLightOrange));

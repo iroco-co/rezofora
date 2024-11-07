@@ -47,6 +47,10 @@ nav.menu
     padding: .25rem;
 }
 
+.menu > .items > a.about{
+    color: var(--DarkOrange);
+}
+
 @media only screen and (min-width: 576px) {
 
     .menu

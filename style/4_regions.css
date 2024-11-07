@@ -30,7 +30,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
-
+    font-size: .75rem;
 }
 footer ul{
     list-style-type: none;
