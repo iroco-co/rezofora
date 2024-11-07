@@ -10,11 +10,10 @@
     margin: -2rem 1.5rem 3rem;
     padding: 2rem;
     width: auto;
-    background-color: #FDF6ED;
+    background-color: var(--LightOrange);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    row-gap: .5rem;
     font-size: small;
 }
 
@@ -22,7 +21,28 @@
     margin-bottom: 0;
 }
 
-.card > button{
+
+.card > header {
+    text-align: center;
+}
+
+.card > ul {
+    list-style-type: none;
+}
+
+.card > .card__content {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card__content p {
+    margin-bottom: .5rem;
+}
+.card > button {
     margin-top: 2rem;
 }
 
@@ -34,7 +54,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .cards > .card ,.cards > .card:last-child{
+    .cards > .card, .cards > .card:last-child {
         width: 13rem;
         margin-bottom: 0;
     }

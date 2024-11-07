@@ -1,24 +1,27 @@
 .hero {
-    background-color: #156968;
+    background-color: var(--DarkGreen);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding-bottom: 2rem;
 }
 
 .hero > .hero-content {
-    border-left: #E6AC2A solid 6px;
+    border-left: var(--Orange) solid 6px;
     padding-left: 1rem;
-    /*width: 20rem;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.hero-content > h1 {
+.hero-content > header > h1 {
+    max-width: 45ch;
     text-wrap: balance;
     color: var(--Orange);
     margin-bottom: 1.5rem;
-    /*font-weight: bold;*/
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: normal;
 }
 
@@ -29,38 +32,3 @@
     line-height: normal;
     font-size: larger;
 }
-
-.hero > .illustration {
-    display: none;
-}
-
-@media only screen and (min-width: 768px) {
-    .hero {
-
-    }
-
-    .hero > .hero-content {
-        width: 25rem;
-    }
-
-    .hero-content > h1 {
-
-    }
-
-    .hero-content > p {
-
-    }
-
-    .hero > .illustration {
-        display: initial;
-        width: 12rem;
-    }
-
-
-}
-
-@media only screen and (min-width: 992px) {
-
-}
-
-/*32:5  ✖  Only graphical elements should be given dimensions. `.hero > div & width`  rule-selector-property-disallowed-list*/
