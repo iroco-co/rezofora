@@ -3,13 +3,14 @@
 - Site live : https://rezofora.co
 - Site en preview sur Github pages : https://iroco-co.github.io/rezofora/
 - [Design visuel](design-visuel)
+- Traductions : https://fink.inlang.com/github.com/iroco-co/rezofora
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```sh
-npm run dev -- --host
+npm start
 ```
 
 ## Running tests
