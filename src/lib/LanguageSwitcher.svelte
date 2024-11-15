@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div>
+<div style="justify-self: end">
 	<button onclick={() => switchToLanguage('fr')}>fr</button>
 	<button onclick={() => switchToLanguage('en')}>en</button>
 </div>

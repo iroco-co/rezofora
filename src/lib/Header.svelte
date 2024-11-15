@@ -1,6 +1,7 @@
 <script>
 	import { base } from '$app/paths';
 	import * as m from '$lib/paraglide/messages.js';
+	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
 </script>
 
 <header>
@@ -23,4 +24,5 @@
 			<a href="{base}/#know-us" class="about">{m.header_about()}</a>
 		</div>
 	</nav>
+	<LanguageSwitcher ></LanguageSwitcher>
 </header>
