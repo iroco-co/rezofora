@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
+	import * as m from '$lib/paraglide/messages.js';
 </script>
 
 <svelte:head>
-	<title>{$_('legal.title')}</title>
+	<title>{m.footer_other_legal()}</title>
 </svelte:head>
 
-<h2>{$_('legal.title')}</h2>
+<h2>{m.footer_other_legal()}</h2>

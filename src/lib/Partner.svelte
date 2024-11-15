@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let  label = ''
-	export let description = ''
-	export let href = ''
-	export let picturePath = ''
+	export let label = '';
+	export let description = '';
+	export let href = '';
+	export let picturePath = '';
 </script>
 
 <li style="list-style: none">

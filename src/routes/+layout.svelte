@@ -1,11 +1,13 @@
-<script>
-	import '../i18n';
+<script lang="ts">
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import { i18n } from '$lib/i18n';
 	import '../app.scss';
 	import '../colors.scss';
-	import Header from '$lib/Header.svelte';
 	import { base } from '$app/paths';
+	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 
+	let { children } = $props();
 </script>
 
 <svelte:head>
@@ -79,8 +81,10 @@
 		content="Rezofora, conseil et accompagnement en numérique responsable."
 	/>
 </svelte:head>
-<Header></Header>
-<main id="main">
-	<slot />
-</main>
-<Footer></Footer>
+<ParaglideJS {i18n}>
+	<Header></Header>
+	<main id="main">
+		{@render children()}
+	</main>
+	<Footer></Footer>
+</ParaglideJS>

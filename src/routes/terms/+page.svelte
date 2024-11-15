@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
+	import * as m from '$lib/paraglide/messages.js';
 </script>
 
 <svelte:head>
-	<title>{$_('terms.title')}</title>
+	<title>{m.footer_other_terms()}</title>
 </svelte:head>
 
-<h2>{$_('terms.title')}</h2>
+<h2>{m.footer_other_terms()}</h2>

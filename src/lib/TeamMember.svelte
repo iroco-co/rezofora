@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-		export let name = ''
-		export let topic = ''
-		export let bio = ''
-		export let picture = ''
+	export let name = '';
+	export let topic = '';
+	export let bio = '';
+	export let picture = '';
 </script>
 
 <li class="team-member">
