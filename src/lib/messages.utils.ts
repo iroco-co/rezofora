@@ -48,7 +48,7 @@ export function messagesHierarchy<T>(suffix: string, a: object): T[] {
 		.map((value) => new Map(Object.entries(value)))
 
 		.reduce((previousValue, currentValue) => {
-			currentValue.keys().forEach((k) => {
+			Array.from(currentValue.keys()).forEach((k) => {
 				let old = previousValue.get(k);
 				if (old === undefined) old = {};
 				const news = { ...old, ...currentValue.get(k) };
@@ -93,5 +93,5 @@ export function messagesArray(suffix: string, a: object): string[] {
 				return [order, value()];
 			})
 	);
-	return map.values().toArray();
+	return Array.from(map.values());
 }
