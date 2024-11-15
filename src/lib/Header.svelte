@@ -20,7 +20,7 @@
 		<div class="items">
 			<a href="{base}/#support">{m.header_support()}</a>
 			<a href="{base}/#training">{m.header_training()}</a>
-			<a href="{base}/#inspire">{m.header_training()}</a>
+			<a href="{base}/#inspire">{m.header_inspire()}</a>
 			<a href="{base}/#know-us" class="about">{m.header_about()}</a>
 		</div>
 	</nav>
