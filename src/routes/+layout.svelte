@@ -6,10 +6,10 @@
 	import { base } from '$app/paths';
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import SchemaOrg from '$lib/SchemaOrg.svelte';
 
 	let { children } = $props();
 </script>
-
 <svelte:head>
 	<link rel="preconnect" href="{base}/" />
 	<link rel="stylesheet" href="{base}/fonts/inter/inter.css" />
@@ -26,62 +26,9 @@
 	<link rel="stylesheet" href="{base}/style/6_components/hero.css" />
 	<link rel="stylesheet" href="{base}/style/6_components/menu.css" />
 	<link rel="stylesheet" href="{base}/style/6_components/title-and-text.css" />
-
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@graph": [
-				{
-					"@type": "WebPage",
-					"@id": "https://rezofora.co/",
-					"url": "https://rezofora.co/",
-					"name": "Rezofora, conseil et accompagnement en numérique responsable.",
-					"about": {
-						"@id": "https://rezofora.co/"
-					},
-					"datePublished": "2024-03-08T18:00:00+00:00",
-					"dateModified": "2024-03-08T18:00:00+00:00",
-					"description": "Mon rôle est de comprendre vos besoins et de vous adresser la meilleure solution avec une seule obsession : le résultat atteint !",
-					"inLanguage": "fr-FR",
-					"potentialAction": [
-						{
-							"@type": "ReadAction",
-							"target": ["https://rezofora.co/"]
-						}
-					]
-				},
-				{
-					"@type": "WebSite",
-					"@id": "https://rezofora.co/",
-					"url": "https://rezofora.co/",
-					"name": "Rezofora",
-					"description": "Conseil et accompagnement en numérique responsable.",
-					"publisher": {
-						"@id": "https://rezofora.co/"
-					},
-					"inLanguage": "fr-FR"
-				},
-				{
-					"@type": ["Person", "Organization"],
-					"@id": "https://rezofora.co/",
-					"name": "rezofora",
-					"sameAs": [
-						"https://rezofora.co/",
-						"https://rezofora.fr/",
-						"https://rezofora.io/",
-						"https://rezofora.co/",
-						"https://www.linkedin.com/in/adelineagut/"
-					]
-				}
-			]
-		}
-	</script>
-	<meta
-		name="description"
-		content="Rezofora, conseil et accompagnement en numérique responsable."
-	/>
 </svelte:head>
 <ParaglideJS {i18n}>
+	<SchemaOrg></SchemaOrg>
 	<Header></Header>
 	<main id="main">
 		{@render children()}

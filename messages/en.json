@@ -76,5 +76,12 @@
 	"footer_other_legal": "Legal Notices",
 	"footer_other_copyrights": "© 2024 Rezofora. All Rights Reserved.",
 	"footer_aria_label_legal_links": "Legal links",
-	"sitemap_title": "Sitemap"
+	"sitemap_title": "Sitemap",
+	"head_seo_webPage_name": "Rezofora, conseil et accompagnement en numérique responsable.",
+	"head_seo_webPage_description": "Mon rôle est de comprendre vos besoins et de vous adresser la meilleure solution avec une seule obsession : le résultat atteint !",
+	"head_seo_webPage_inLanguage": "en-GB",
+	"head_seo_webSite_name": "Rezofora",
+	"head_seo_webSite_description": "Conseil et accompagnement en numérique responsable.",
+	"head_seo_webSite_inLanguage": "en-GB",
+	"head_seo_personOrganization_name": "rezofora"
 }
