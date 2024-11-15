@@ -1,5 +1,8 @@
 <script lang="ts">
-	let { label = '', description = '', href = '', picturePath = '' } = $props();
+	export let  label = ''
+	export let description = ''
+	export let href = ''
+	export let picturePath = ''
 </script>
 
 <li style="list-style: none">

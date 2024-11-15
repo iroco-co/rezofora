@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	let { name = '', topic = '', bio = '', picture = '' } = $props();
+		export let name = ''
+		export let topic = ''
+		export let bio = ''
+		export let picture = ''
 </script>
 
 <li class="team-member">

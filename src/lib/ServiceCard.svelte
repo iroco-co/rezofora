@@ -2,7 +2,8 @@
 	import { _, json } from 'svelte-i18n';
 	import { _array } from '../i18n';
 
-	let { anchorId = '', i18nId = '' } = $props();
+	export let  anchorId = ''
+		export let i18nId = ''
 </script>
 
 <section id={anchorId} class="card">
