@@ -6,4 +6,11 @@
 	<title>{m.legal_title()}</title>
 </svelte:head>
 
-<h2>{m.legal_title()}</h2>
+<section class=" as-secondary">
+	<div class="wrapper title-and-text">
+		<header>
+			<h1>{m.legal_title()}</h1>
+		</header>
+
+	</div>
+</section>

@@ -6,4 +6,11 @@
 	<title>{m.terms_title()}</title>
 </svelte:head>
 
-<h2>{m.terms_title()}</h2>
+<section class=" as-secondary">
+	<div class="wrapper title-and-text">
+		<header>
+			<h1>{m.terms_title()}</h1>
+		</header>
+
+	</div>
+</section>
