@@ -43,6 +43,7 @@
 		</div>
 	</div>
 </section>
+
 <section id="services" style="padding-bottom: 0">
 	<div class="wrapper cards">
 		<ServiceCard
@@ -62,6 +63,7 @@
 		/>
 	</div>
 </section>
+
 <section id="philosophy" class="as-secondary">
 	<div class="wrapper title-and-text ">
 		<header>
@@ -128,7 +130,6 @@
 			</div>
 		</div>
 	</div>
-
 </section>
 
 <section id="know-us" class="as-primary" style="margin-bottom: 0;">
