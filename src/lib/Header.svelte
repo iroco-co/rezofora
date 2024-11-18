@@ -25,7 +25,7 @@
 				<a href="{base}/#know-us" class="about">{m.header_about()}</a>
 			</div>
 		</nav>
-		<LanguageSwitcher></LanguageSwitcher>
+<!--		<LanguageSwitcher></LanguageSwitcher>-->
 	</div>
 </header>
 
