@@ -21,6 +21,12 @@
 		href: string;
 		picturePath: string;
 	}>('ecosystem_partner', m);
+
+	const integrate_long_description_details_refs = messagesHierarchy<{
+		term: string
+		href: string
+		description: string
+	}>('integrate_long_description_details_ref', m);
 </script>
 
 <svelte:head>
@@ -80,7 +86,6 @@
 			<p>
 				{m.integrate_paragraph()}
 			</p>
-			<!--	TODO: A11Y : treat as complex image : https://www.w3.org/WAI/tutorials/images/complex/ -->
 			<img
 				id="continuum"
 				alt="Continuum of expertise"
@@ -92,40 +97,17 @@
 				<summary>Une continuité d'expertises</summary>
 				<section>
 					<p>
-						Une informatique respectueuse au niveau du logiciel et de l'infrastructure qui le supporte.
-						Vers une entreprise responsable.
-					</p>
-					<p>Nous nous appuyons sur les référentiels, lois et règlements qui encadrent votre transition :</p>
+						Une informatique respectueuse au niveau du logiciel et de l'infrastructure qui le supporte. Vers une
+						entreprise responsable. Nous nous appuyons sur les référentiels, lois et règlements qui encadrent votre
+						transition :</p>
 					<dl>
-						<dt><a
-							href="https://www.ecologie.gouv.fr/politiques-publiques/numerique-responsable#la-loi-visant-a-reduire-lempreinte-environnementale-du-numerique-reen-1">REEN</a>
-						</dt>
-						<dd>Loi visant à Réduire l'Empreinte Environnementale du Numérique</dd>
-						<dt><a
-							href="https://www.ecologie.gouv.fr/politiques-publiques/numerique-responsable#la-loi-anti-gaspillage-et-economie-circulaire-agec-0">AGEC</a>
-						</dt>
-						<dd>Loi Anti Gaspillage et Économie Circulaire</dd>
-						<dt><a href="https://accessibilite.numerique.gouv.fr/">RGAA</a></dt>
-						<dd>
-							Référentiel Général d’Amélioration de l’Accessibilité.
-							Il facilite la mise en accessibilité des sites et services numériques.
-							Il est édité par la direction interministérielle du numérique (DINUM).
-						</dd>
-						<dt><a href="https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></dt>
-						<dd>
-							Le Règlement Général sur la Protection des Données (RGPD) responsabilise les organismes publics et privés
-							qui
-							traitent leurs données.
-						</dd>
-						<dt><a href="https://entreprendre.service-public.fr/actualites/A16970">CSRD</a></dt>
-						<dd>
-							Reporting Directive (CSRD) fixe de nouvelles normes et obligations de reporting extra-financier.
-							Elle concerne les grandes entreprises et les PME cotées en bourse.
-						</dd>
+						{#each integrate_long_description_details_refs as referential }
+							<dt><a href="{referential.href}">{referential.term}</a>
+							</dt>
+							<dd>{ referential.description }</dd>
+						{/each}
 					</dl>
-					<p></p>
 				</section>
-
 			</details>
 		</div>
 	</div>
