@@ -11,22 +11,22 @@
 		<ul>
 			<li>
 				<a href="{base}/#" class="menu_icon">
-					<Icon label="mail" data={envelope} scale={1.5} />
+					<Icon label="mail" data={envelope} scale={1.7} />
 				</a>
 			</li>
 			<li>
 				<a href="https://github.com/iroco-co/rezofora" class="menu_icon">
-					<Icon label="github" data={github} scale={1.5} />
+					<Icon label="github" data={github} scale={1.7} />
 				</a>
 			</li>
 			<li>
 				<a href="https://www.linkedin.com/company/rezofora/posts/?feedView=all" class="menu_icon">
-					<Icon label="linkedin" data={linkedin} scale={1.5} />
+					<Icon label="linkedin" data={linkedin} scale={1.7} />
 				</a>
 			</li>
 			<li>
 				<a href="{base}/#" class="menu_icon">
-					<Icon label="mastodon" data={mastodon} scale={1.5} />
+					<Icon label="mastodon" data={mastodon} scale={1.7} />
 				</a>
 			</li>
 		</ul>
@@ -42,33 +42,44 @@
 </footer>
 
 <style>
-	.menu_icon {
-		color: var(--DarkGreen);
-		padding: 0.5rem;
-	}
+    .menu_icon {
+        color: var(--DarkGreen);
+        padding: 0.5rem;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+    }
 
-	footer {
-		background-color: var(--White);
-		color: var(--DarkGreen);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    .menu_icon:hover {
+        background-color: #e3f0ea
+    }
 
-	footer ul {
-		list-style-type: none;
-	}
+    footer {
+        background-color: var(--White);
+        color: var(--DarkGreen);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+		footer > * {
+				margin-top: .25rem;
+				margin-bottom: .25rem;
+		}
 
-	footer li {
-		display: inline-block;
-	}
+    footer ul {
+        list-style-type: none;
+    }
 
-	footer a {
-		color: var(--DarkGreen);
-	}
+    footer li {
+        display: inline-block;
+    }
 
-	.copyright {
-		font-size: small;
-		color: var(--DarkGreen);
-	}
+    footer a {
+        color: var(--DarkGreen);
+    }
+
+    .copyright {
+        font-size: small;
+        color: var(--DarkGreen);
+    }
 </style>
