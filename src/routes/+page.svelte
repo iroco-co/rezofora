@@ -75,9 +75,9 @@
 </section>
 
 <section id="strengths" class="title-and-text as-secondary">
-	<header>
-		<h2>{m.strengths_title()}</h2>
-	</header>
+		<header>
+			<h2>{m.strengths_title()}</h2>
+		</header>
 
 	<div class="quadrants">
 		{#each messagesArray('strengths_paragraph', m) as strength}
@@ -124,28 +124,18 @@
 </section>
 
 <style>
-	#continuum {
-		display: block;
-		max-width: 100%;
-		max-height: 30vh;
-		object-fit: scale-down;
-	}
+    #continuum {
+        display: block;
+        max-width: 100%;
+        max-height: fit-content;
+        object-fit: scale-down;
+    }
 
-	@media only screen and (min-width: 576px) {
-		#continuum {
-			max-height: 44vh;
-		}
-	}
 
-	@media only screen and (min-width: 768px) {
-		#continuum {
-			max-height: 100vh;
-		}
-	}
 
-	.quadrants > .quadrant {
-		padding: 0.5rem;
-	}
+    .quadrants > .quadrant {
+        padding: 0.5rem;
+    }
 
 	@media only screen and (min-width: 576px) {
 		.quadrants {
