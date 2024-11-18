@@ -1,7 +1,11 @@
 <script lang="ts">
-	export let anchorId = '';
-	export let title = '';
-	export let paragraphs: string[] = [];
+	interface Props {
+		anchorId: string;
+		title: string;
+		paragraphs: string[];
+	}
+
+	let { anchorId, title, paragraphs }: Props = $props();
 </script>
 
 <section id={anchorId} class="card">

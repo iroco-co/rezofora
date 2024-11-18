@@ -1,8 +1,12 @@
 <script lang="ts">
-	export let label = '';
-	export let description = '';
-	export let href = '';
-	export let picturePath = '';
+	interface Props {
+		label: string;
+		description?: string;
+		href: string;
+		picturePath: string;
+	}
+
+	let { label, description, href, picturePath }: Props = $props();
 </script>
 
 <li style="list-style: none">
