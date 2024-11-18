@@ -96,7 +96,7 @@
 	"footer_menu_title": "Menu",
 	"footer_other_terms": "General Terms of Sale",
 	"footer_other_legal": "Legal Notices",
-	"footer_other_copyrights": "© 2024 Rezofora. All Rights Reserved.",
+	"footer_other_copyrights": "© {year} Rezofora. All Rights Reserved.",
 	"footer_legal_links_aria_label": "Legal links",
 	"footer_contact_links_aria_label": "Contact links",
 	"sitemap_title": "Sitemap",

@@ -96,7 +96,7 @@
   "footer_menu_title": "Menu",
   "footer_other_terms": "Conditions Générales de Vente",
   "footer_other_legal": "Mentions Légales",
-  "footer_other_copyrights": "© 2024 Rezofora. Tous droits réservés.",
+  "footer_other_copyrights": "© {year} Rezofora. Tous droits réservés.",
   "footer_legal_links_aria_label": "Liens légaux",
   "footer_contact_links_aria_label": "Liens de contact",
   "sitemap_title": "Plan du site",

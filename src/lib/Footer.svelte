@@ -4,6 +4,7 @@
 	import { base } from '$app/paths';
 	import mastodon from '$lib/mastodon';
 	import * as m from '$lib/paraglide/messages.js';
+	const year = new Date().getFullYear();
 </script>
 
 <footer>
@@ -39,7 +40,7 @@
 				<li><a href="{base}/terms">{m.footer_other_terms()}</a></li>
 			</ul>
 		</nav>
-		<div class="copyright">{m.footer_other_copyrights()}</div>
+		<div class="copyright">{m.footer_other_copyrights({ year })}</div>
 	</div>
 </footer>
 
