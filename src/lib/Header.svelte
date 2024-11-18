@@ -1,18 +1,17 @@
 <script>
 	import { base } from '$app/paths';
 	import * as m from '$lib/paraglide/messages.js';
-	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
 </script>
 
 <header>
 	<div class="wrapper">
-		<nav class="header-skip-to-content" aria-label="Accès rapide" lang="fr">
-			<a href="#main">Contenu</a>
+		<nav class="header-skip-to-content" aria-label="{m.header_skip_to_content_aria_label()}" lang="fr">
+			<a href="#main">{m.header_skip_to_content_content()}</a>
 		</nav>
-		<nav aria-label="Menu" class="menu">
+		<nav aria-label="{m.header_menu_aria_label()}" class="menu">
 			<a href="{base}/" class="brand-logo">
 				<img
-					alt="Logo Rezofora"
+					alt="{m.header_logo_alt()}"
 					src="{base}/img/Logo-Rezofora-H-RVB-cropped.svg"
 					height="62"
 					width="144"

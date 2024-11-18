@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>{m.footer_other_terms()}</title>
+	<title>{m.terms_title()}</title>
 </svelte:head>
 
-<h2>{m.footer_other_terms()}</h2>
+<h2>{m.terms_title()}</h2>

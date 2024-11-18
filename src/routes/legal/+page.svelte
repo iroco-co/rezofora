@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>{m.footer_other_legal()}</title>
+	<title>{m.legal_title()}</title>
 </svelte:head>
 
-<h2>{m.footer_other_legal()}</h2>
+<h2>{m.legal_title()}</h2>

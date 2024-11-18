@@ -8,7 +8,7 @@
 
 <footer>
 	<div class="center-in-section">
-		<nav aria-label="Liens de contact">
+		<nav aria-label="{m.footer_contact_links_aria_label()}">
 			<ul>
 				<li>
 					<a href="{base}/#" class="menu_icon">
@@ -32,7 +32,7 @@
 				</li>
 			</ul>
 		</nav>
-		<nav aria-label={m.footer_aria_label_legal_links()}>
+		<nav aria-label={m.footer_legal_links_aria_label()}>
 			<ul class="menu_items">
 				<li><a href="{base}/legal">{m.footer_other_legal()}</a></li>
 				<li aria-hidden="true">|</li>
