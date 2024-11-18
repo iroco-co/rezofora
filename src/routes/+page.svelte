@@ -94,12 +94,9 @@
 				width="780" height="430"
 			/>
 			<details id="continuum-details">
-				<summary>Une continuité d'expertises</summary>
+				<summary>{m.integrate_long_description_summary()}</summary>
 				<section>
-					<p>
-						Une informatique respectueuse au niveau du logiciel et de l'infrastructure qui le supporte. Vers une
-						entreprise responsable. Nous nous appuyons sur les référentiels, lois et règlements qui encadrent votre
-						transition :</p>
+					<p>{m.integrate_long_description_details_explanation()}</p>
 					<dl>
 						{#each integrate_long_description_details_refs as referential }
 							<dt><a href="{referential.href}">{referential.term}</a>
