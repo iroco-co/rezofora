@@ -9,10 +9,6 @@ body {
     padding: 0;
 }
 
-header {
-    padding: 0;
-    margin: 0;
-}
 
 
 main {
@@ -25,15 +21,24 @@ section {
     padding: 2rem .5rem;
 }
 
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+}
+
+.center-in-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 @media only screen and (min-width: 576px) {
 
     body {
         padding: 0;
-    }
-
-    header {
-        padding: 0;
-        margin: 0;
     }
 
     main {

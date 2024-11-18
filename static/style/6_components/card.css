@@ -8,32 +8,37 @@
     margin-top: -4rem;
 }
 
-.cards > .card {
+.cards.wrapper {
+    max-width: 992px;
+}
+
+.cards  .card {
     margin: 0 1.5rem 2rem;
     padding: 2rem;
-    width: auto;
+    width: 100%;
     background-color: var(--LightOrange);
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     row-gap: .5rem;
     font-size: small;
 }
 
 
-.cards > .card:last-child {
+.cards  .card:last-child {
     margin-bottom: 0;
 }
 
 
-.card > header {
+.card  header {
     text-align: center;
 }
 
-.card > ul {
+.card  ul {
     list-style-type: none;
 }
 
-.card > .card__content {
+.card  .card__content {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -44,8 +49,9 @@
 
 .card__content p {
     margin-bottom: .5rem;
+    width: 100%;
 }
-.card > button {
+.card  button {
     margin-top: 2rem;
 }
 
@@ -56,17 +62,21 @@
         margin-bottom: -2rem;
     }
 
+    .card {
+        padding: 0 6rem;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
 
-    .cards > .card {
+    .cards  .card {
         width: 16rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .cards > .card, .cards > .card:last-child {
+    .cards  .card, .cards  .card:last-child {
         width: 13rem;
         margin-bottom: 0;
     }

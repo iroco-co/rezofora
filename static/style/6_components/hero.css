@@ -7,7 +7,7 @@
     padding-bottom: 4rem;
 }
 
-.hero > .hero-content {
+.hero  .hero-content {
     border-left: var(--Orange) solid 6px;
     padding-left: 1rem;
     display: flex;
@@ -17,8 +17,11 @@
     justify-content: space-evenly;
 }
 
+.hero .wrapper{
+    max-width: 740px;
+}
+
 .hero-content > header > h1 {
-    max-width: 45ch;
     text-wrap: balance;
     color: var(--Orange);
     margin-bottom: 1.5rem;

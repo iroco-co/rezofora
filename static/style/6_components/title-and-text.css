@@ -7,10 +7,6 @@ section
 
  */
 .title-and-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -26,51 +22,50 @@ section
 .title-and-text  p {
     margin: 0 1.5rem;
     margin-bottom: 1rem;
-
 }
 
-.title-and-text.as-primary {
+.as-primary {
     background-color: var(--DarkGreen)
 }
 
-.title-and-text.as-primary > header {
+.as-primary  header {
     border-color: var(--Orange);
 }
 
-.title-and-text.as-primary > header > * {
+.as-primary  header > * {
     color: var(--Orange);
 }
 
-.title-and-text.as-primary > p {
+.as-primary  p {
     color: var(--White);
 }
 
-.title-and-text.as-secondary {
+.as-secondary {
     background-color: var(--White)
 }
 
-.title-and-text.as-secondary > header {
+.as-secondary  header {
     border-color: var(--Black);
     color: var(--Black);
 }
 
-.title-and-text.as-secondary > p {
+.as-secondary  p {
     color: var(--Black);
 }
 
-.title-and-text.as-tertiary {
+.as-tertiary {
     background-color: var(--Pink)
 }
 
-.title-and-text.as-tertiary > header {
+.as-tertiary  header {
     border-color: var(--White);
 }
 
-.title-and-text.as-tertiary > header > * {
+.as-tertiary  header > * {
 
     color: var(--DeepBlack);
 }
 
-.title-and-text.as-tertiary > p {
+.as-tertiary  p {
     color: var(--Black);
 }
