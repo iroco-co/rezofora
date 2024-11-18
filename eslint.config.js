@@ -16,7 +16,8 @@ export default ts.config(
 			'!.env.example',
 			'pnpm-lock.yaml',
 			'package-lock.json',
-			'yarn.lock'
+			'yarn.lock',
+			'src/lib/paraglide'
 		]
 	},
 	js.configs.recommended,
