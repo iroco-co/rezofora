@@ -90,7 +90,7 @@
 			</p>
 			<img
 				id="continuum"
-				alt="Continuum of expertise"
+				alt=""
 				aria-details="continuum-details"
 				src="{base}/img/expertises.drawio.svg"
 				width="780" height="430"
