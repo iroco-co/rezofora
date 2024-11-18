@@ -45,6 +45,33 @@ ul, ol {
     padding-left: var(--bullet-padding, 1.1em);
 }
 
+dl{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+dt{
+    font-weight: bold;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+dd{
+    padding-left: 1rem;
+}
+
+details section  {
+    margin :0;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+
+details summary {
+    cursor: pointer;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+padding-left: 0;
+}
+
 /* Better typographic display */
 html {
     text-rendering: geometricPrecision;
@@ -94,7 +121,7 @@ p > em {
 
 /* Generic maximum & minimum
  * widths for any paragraph */
-p {
+p,dd {
     min-width: var(--p-min-width, 22ch);
     max-width: var(--p-max-width, 75ch);
 }

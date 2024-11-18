@@ -11,9 +11,11 @@ section
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.title-and-text > header {
+.title-and-text  header {
     border-left-width: 6px;
     border-left-style: solid;
     padding: .5rem 0;
@@ -21,7 +23,7 @@ section
     margin-bottom: 1rem;
 }
 
-.title-and-text > p {
+.title-and-text  p {
     margin: 0 1.5rem;
     margin-bottom: 1rem;
 

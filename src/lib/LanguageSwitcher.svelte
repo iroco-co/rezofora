@@ -2,16 +2,27 @@
 	import type { AvailableLanguageTag } from '$lib/paraglide/runtime';
 	import { i18n } from '$lib/i18n';
 	import { page } from '$app/stores';
-	import { goto } from '$app/navigation';
 
-	function switchToLanguage(newLanguage: AvailableLanguageTag) {
+	const localizedLanguagePath = (newLanguage: AvailableLanguageTag): string => {
 		const canonicalPath = i18n.route($page.url.pathname);
 		const localisedPath = i18n.resolveRoute(canonicalPath, newLanguage);
-		goto(localisedPath);
-	}
+		return localisedPath;
+	};
+
 </script>
 
-<div style="justify-self: end">
-	<button onclick={() => switchToLanguage('fr')}>fr</button>
-	<button onclick={() => switchToLanguage('en')}>en</button>
+<div class="foo">
+	<a href="{localizedLanguagePath('fr')}" hreflang="fr">fr</a>
+	<a href="{localizedLanguagePath('fr')}" hreflang="en">en</a>
 </div>
+
+<style>
+    .foo {
+        justify-self: end
+    }
+
+    .foo a {
+				display: inline-block;
+        padding: .5rem;
+    }
+</style>
