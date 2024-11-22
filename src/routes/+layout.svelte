@@ -10,6 +10,7 @@
 
 	let { children } = $props();
 </script>
+
 <svelte:head>
 	<link rel="preconnect" href="{base}/" />
 	<link rel="stylesheet" href="{base}/fonts/inter/inter.css" />

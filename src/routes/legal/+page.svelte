@@ -8,24 +8,19 @@
 
 <section class=" as-primary">
 	<div class="wrapper title-and-text">
-
 		<header>
 			<h1>{m.legal_title()}</h1>
 		</header>
-
 	</div>
 </section>
 
 <section class=" as-secondary">
 	<div class="wrapper title-and-text">
-
 		<header>
 			<h2>{m.legal_editor_title()}</h2>
 		</header>
 
-
 		<div class="center-in-section">
-
 			<h3>{m.legal_editor_business_name_title()}</h3>
 			<p>IROCO SAS</p>
 
@@ -46,21 +41,17 @@
 
 			<h3>{m.legal_editor_business_chair_executives_names_title()}</h3>
 			<p>Adeline AGUT, Bruno THOMAS</p>
-
 		</div>
-
 	</div>
 </section>
 
 <section class=" as-secondary">
 	<div class="wrapper title-and-text">
-
 		<header>
 			<h2>{m.legal_hosting_title()}</h2>
 		</header>
 
 		<div class="center-in-section">
-
 			<h3>{m.legal_hosting_name_title()}</h3>
 			<p>Eolas SARL</p>
 
@@ -75,9 +66,6 @@
 
 			<h3>{m.legal_hosting_funding_amount_title()}</h3>
 			<p>28 988 euros</p>
-
 		</div>
-
 	</div>
 </section>
-

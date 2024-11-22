@@ -11,6 +11,5 @@
 		<header>
 			<h1>{m.terms_title()}</h1>
 		</header>
-
 	</div>
 </section>
