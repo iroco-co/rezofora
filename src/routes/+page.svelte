@@ -27,6 +27,9 @@
 		href: string
 		description: string
 	}>('integrate_long_description_details_ref', m);
+	const strengths = messagesHierarchy<{
+		paragraph: string
+	}>('strengths_items', m);
 </script>
 
 <svelte:head>
@@ -120,10 +123,11 @@
 
 		<div class="center-in-section">
 			<div class="quadrants">
-				{#each messagesArray('strengths_paragraph', m) as strength}
+				{#each strengths as { paragraph },index}
 					<div class="quadrant">
 						<p>
 							{@html strength}
+							{@html paragraph}
 						</p>
 					</div>
 				{/each}
