@@ -1,12 +1,13 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
-
+	import plus from 'svelte-awesome/icons/plus';
 	import { base } from '$app/paths';
 	import TeamMember from '$lib/TeamMember.svelte';
 	import Partner from '$lib/Partner.svelte';
 	import ServiceCard from '$lib/ServiceCard.svelte';
 	import * as m from '$lib/paraglide/messages.js';
 	import { messagesArray, messagesHierarchy } from '$lib/messages.utils';
+	import Icon from 'svelte-awesome';
 
 	const bios = messagesHierarchy<{
 		name: string;
