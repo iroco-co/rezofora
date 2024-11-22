@@ -1,6 +1,6 @@
 {
 	"name": "rezofora",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -14,9 +14,8 @@
 		"test": "vitest",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy": "vite build  --base=https://iroco-co.github.io/rezofora/ && gh-pages -d build -t true",
-		"deploy-prelaunch": "gh-pages -d prelaunch_static -t true",
-		"deploy-new-design": "gh-pages -d new_design_static -t true"
+		"deploy-staging": "vite build  --base=https://iroco-co.github.io/rezofora/ && gh-pages -d build -t true",
+		"deploy": "vite build  --base=/ && gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.3.1",
