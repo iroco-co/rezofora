@@ -18,3 +18,9 @@
 		{/each}
 	</div>
 </section>
+
+<style>
+	.card header {
+		margin-bottom: 1.5rem;
+	}
+</style>
