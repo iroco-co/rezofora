@@ -9,7 +9,7 @@
 
 <footer>
 	<div class="center-in-section">
-		<nav aria-label="{m.footer_contact_links_aria_label()}">
+		<nav aria-label={m.footer_contact_links_aria_label()}>
 			<ul>
 				<li>
 					<a href="{base}/#" class="menu_icon">
@@ -43,50 +43,50 @@
 </footer>
 
 <style>
-    .menu_icon {
-        color: var(--DarkGreen);
-        padding: 0.5rem;
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-    }
+	.menu_icon {
+		color: var(--DarkGreen);
+		padding: 0.5rem;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+	}
 
-    .menu_icon:hover {
-        background-color: #e3f0ea
-    }
+	.menu_icon:hover {
+		background-color: #e3f0ea;
+	}
 
-    footer {
-        background-color: var(--White);
-        color: var(--DarkGreen);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+	footer {
+		background-color: var(--White);
+		color: var(--DarkGreen);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-    footer > * {
-        margin-top: .25rem;
-        margin-bottom: .25rem;
-    }
+	footer > * {
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
 
-    footer ul {
-        list-style-type: none;
-    }
+	footer ul {
+		list-style-type: none;
+	}
 
-    footer li {
-        display: inline-block;
-    }
+	footer li {
+		display: inline-block;
+	}
 
-    footer a {
-        color: var(--DarkGreen);
-    }
+	footer a {
+		color: var(--DarkGreen);
+	}
 
-    .copyright {
-        font-size: small;
-        color: var(--DarkGreen);
-    }
+	.copyright {
+		font-size: small;
+		color: var(--DarkGreen);
+	}
 
-    footer  .center-in-section {
-        display: flex;
-				align-items: center;
-    }
+	footer .center-in-section {
+		display: flex;
+		align-items: center;
+	}
 </style>
