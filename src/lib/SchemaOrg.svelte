@@ -44,7 +44,6 @@
 					'https://rezofora.co/',
 					'https://rezofora.fr/',
 					'https://rezofora.io/',
-					'https://rezofora.co/',
 					'https://www.linkedin.com/in/adelineagut/'
 				]
 			}
