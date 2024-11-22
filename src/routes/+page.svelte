@@ -126,7 +126,7 @@
 				{#each strengths as { paragraph },index}
 					<div class="quadrant">
 						<p>
-							{@html strength}
+							<Icon data={plus} scale="{1.5}"/>
 							{@html paragraph}
 						</p>
 					</div>
@@ -143,12 +143,12 @@
 		</header>
 		<div class="center-in-section">
 			<ul class="grid">
-				{#each bios as person}
+				{#each bios as {name,topic,bio,picture}}
 					<TeamMember
-						name={person.name}
-						topic={person.topic}
-						bio={person.bio}
-						picture={person.picture}
+						name={name}
+						topic={topic}
+						bio={bio}
+						picture={picture}
 					/>
 				{/each}
 			</ul>
