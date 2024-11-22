@@ -12,7 +12,7 @@
     max-width: 992px;
 }
 
-.cards  .card {
+.cards .card {
     margin: 0 1.5rem 2rem;
     padding: 2rem;
     width: 100%;
@@ -25,20 +25,21 @@
 }
 
 
-.cards  .card:last-child {
+.cards .card:last-child {
     margin-bottom: 0;
 }
 
 
-.card  header {
+.card header {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.card  ul {
+.card ul {
     list-style-type: none;
 }
 
-.card  .card__content {
+.card .card__content {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -51,13 +52,14 @@
     margin-bottom: .5rem;
     width: 100%;
 }
-.card  button {
+
+.card button {
     margin-top: 2rem;
 }
 
 @media only screen and (min-width: 576px) {
 
-    .cards{
+    .cards {
         margin-top: -6rem;
         margin-bottom: -2rem;
     }
@@ -70,18 +72,15 @@
 
 @media only screen and (min-width: 768px) {
 
-    .cards  .card {
+    .cards .card {
         width: 16rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .cards  .card, .cards  .card:last-child {
+    .cards .card, .cards .card:last-child {
         width: 13rem;
         margin-bottom: 0;
     }
 
 }
-
-/*10:1  ✖  Descendant classes should always be prefixed. `.cards > .card`                selector-disallowed-list*/
-/*13:5  ✖  Only graphical elements should be given dimensions. `.cards > .card & width`  rule-selector-property-disallowed-list*/
