@@ -12,7 +12,7 @@
 		<nav aria-label={m.footer_contact_links_aria_label()}>
 			<ul>
 				<li>
-					<a href="{base}/#" class="menu_icon">
+					<a href="mailto:contact@rezofora.co" class="menu_icon">
 						<Icon label="mail" data={envelope} scale={1.7} />
 					</a>
 				</li>
@@ -27,7 +27,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="{base}/#" class="menu_icon">
+					<a rel="me" href="https://mastodon.social/@rezofora" class="menu_icon">
 						<Icon label="mastodon" data={mastodon} scale={1.7} />
 					</a>
 				</li>
