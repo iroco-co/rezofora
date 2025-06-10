@@ -4,6 +4,7 @@
 	import compass from 'svelte-awesome/icons/compass';
 	import handshakeO from 'svelte-awesome/icons/handshakeO';
 	import thLarge from 'svelte-awesome/icons/thLarge';
+	import { clockO, globe, university, lightbulbO } from 'svelte-awesome/icons';
 	import { base } from '$app/paths';
 	import TeamMember from '$lib/TeamMember.svelte';
 	import Partner from '$lib/Partner.svelte';
@@ -12,7 +13,6 @@
 	import { messagesArray, messagesHierarchy } from '$lib/messages.utils';
 	import Icon from 'svelte-awesome';
 	import type { IconData } from 'svelte-awesome/components/Icon.svelte';
-	import HowToIntegrate from '$lib/HowToIntegrate.svelte';
 	import ServiceCard from '$lib/ServiceCard.svelte';
 
 	const bios = messagesHierarchy<{
@@ -21,6 +21,12 @@
 		bio: string;
 		picture: string;
 	}>('know_us_bios', m);
+
+	const our_services = messagesHierarchy<{
+		title: string;
+		content: string;
+		icon: string;
+	}>('our_services', m);
 
 	const ecosystem_partners = messagesHierarchy<{
 		label: string;
@@ -93,7 +99,62 @@
 </section>
 
 <section id="how-to-integrate" class="as-tertiary">
-	<HowToIntegrate />
+	<div class="wrapper title-and-text">
+		<header>
+			<h2>{m.integrate_title()}</h2>
+		</header>
+		<div class="center-in-section">
+			<div class="service-row">
+				<div class="service-row__icon">
+					<Icon label="mail" data={compass} scale={5} />
+				</div>
+				<div class="service-row__body">
+					<h3>{our_services[0].title}</h3>
+					{@html our_services[0].content}
+				</div>
+			</div>
+
+			<div class="service-row">
+				<div class="service-row__icon">
+					<Icon label="mail" data={clockO} scale={5} />
+				</div>
+				<div class="service-row__body">
+					<h3>{our_services[1].title}</h3>
+					{@html our_services[1].content}
+				</div>
+			</div>
+
+			<div class="service-row">
+				<div class="service-row__icon">
+					<Icon label="mail" data={globe} scale={5} />
+				</div>
+				<div class="service-row__body">
+					<h3>{our_services[2].title}</h3>
+					{@html our_services[2].content}
+				</div>
+			</div>
+
+			<div class="service-row">
+				<div class="service-row__icon">
+					<Icon label="mail" data={university} scale={5} />
+				</div>
+				<div class="service-row__body">
+					<h3>{our_services[3].title}</h3>
+					{@html our_services[3].content}
+				</div>
+			</div>
+
+			<div class="service-row">
+				<div class="service-row__icon">
+					<Icon label="mail" data={lightbulbO} scale={5} />
+				</div>
+				<div class="service-row__body">
+					<h3>{our_services[4].title}</h3>
+					{@html our_services[4].content}
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="strengths" class="as-secondary">
@@ -163,6 +224,26 @@
 
 	.quadrants > .quadrant {
 		padding: 0.5rem;
+	}
+
+	.service-row {
+		display: flex;
+		align-items: center;
+		padding-bottom: 1em;
+	}
+
+	.service-row__icon {
+		align-content: center;
+		text-align: center;
+		flex: 1 1;
+	}
+
+	.service-row__body {
+		flex: 1 1;
+	}
+
+	.service-row:nth-child(odd) {
+		flex-direction: row-reverse;
 	}
 
 	@media only screen and (min-width: 576px) {
