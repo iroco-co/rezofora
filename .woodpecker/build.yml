@@ -7,8 +7,6 @@ steps:
     image: codeberg.org/woodpecker-plugins/node-pm
     commands:
       - npm ci
+      - npm run lint
       - npm run build
-      # deploy to codeberg pages 
-
-depends_on:
-  - build
+      - npm run test
