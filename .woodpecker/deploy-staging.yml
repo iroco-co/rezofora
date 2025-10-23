@@ -1,6 +1,6 @@
 # Updated from SvelteKit docs. See https://kit.svelte.dev/docs/adapter-static#github-pages for more information
 
-name: Deploy to GitHub Pages
+name: Deploy to Codeberg Pages
 
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
